@@ -11,9 +11,9 @@
 package org.jberet.support.io;
 
 import java.io.Serializable;
-import javax.batch.api.BatchProperty;
+import jakarta.batch.api.BatchProperty;
 import javax.enterprise.inject.Instance;
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
 import javax.jms.Destination;

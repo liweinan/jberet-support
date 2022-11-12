@@ -20,8 +20,8 @@ import java.io.OutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Set;
-import javax.batch.api.BatchProperty;
-import javax.inject.Inject;
+import jakarta.batch.api.BatchProperty;
+import jakarta.inject.Inject;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.validation.ConstraintViolation;
@@ -41,8 +41,8 @@ import static org.jberet.support.io.CsvProperties.RESOURCE_KEY;
 import static org.jberet.support.io.CsvProperties.WRITE_MODE_KEY;
 
 /**
- * The base class for all implementations of {@code javax.batch.api.chunk.ItemReader} and
- * {@code javax.batch.api.chunk.ItemWriter}. It also holds batch artifact properties common to all subclasses.
+ * The base class for all implementations of {@code jakarta.batch.api.chunk.ItemReader} and
+ * {@code jakarta.batch.api.chunk.ItemWriter}. It also holds batch artifact properties common to all subclasses.
  *
  * @since   1.0.2
  */

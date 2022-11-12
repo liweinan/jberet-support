@@ -13,9 +13,9 @@ package org.jberet.support.io;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
-import javax.batch.api.chunk.ItemWriter;
+import jakarta.batch.api.chunk.ItemWriter;
 import javax.enterprise.context.Dependent;
-import javax.inject.Named;
+import jakarta.inject.Named;
 import javax.jms.JMSException;
 import javax.jms.MapMessage;
 import javax.jms.Message;
@@ -24,7 +24,7 @@ import javax.jms.MessageProducer;
 import org.jberet.support._private.SupportLogger;
 
 /**
- * An implementation of {@code javax.batch.api.chunk.ItemWriter} that sends data items to a JMS destination. It can
+ * An implementation of {@code jakarta.batch.api.chunk.ItemWriter} that sends data items to a JMS destination. It can
  * sends the following JMS message types:
  * <p>
  * <ul>

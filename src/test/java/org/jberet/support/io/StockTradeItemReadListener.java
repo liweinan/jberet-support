@@ -13,11 +13,11 @@ package org.jberet.support.io;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import javax.batch.api.BatchProperty;
-import javax.batch.api.chunk.listener.AbstractItemReadListener;
+import jakarta.batch.api.BatchProperty;
+import jakarta.batch.api.chunk.listener.AbstractItemReadListener;
 import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.joda.time.DateTime;
 

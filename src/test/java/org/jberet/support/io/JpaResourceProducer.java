@@ -11,7 +11,7 @@
 package org.jberet.support.io;
 
 import javax.enterprise.inject.Produces;
-import javax.inject.Named;
+import jakarta.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 

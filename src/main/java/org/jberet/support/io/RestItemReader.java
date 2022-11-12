@@ -14,11 +14,11 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import javax.batch.api.BatchProperty;
-import javax.batch.api.chunk.ItemReader;
+import jakarta.batch.api.BatchProperty;
+import jakarta.batch.api.chunk.ItemReader;
 import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import javax.ws.rs.HttpMethod;
 import javax.ws.rs.client.WebTarget;
 

@@ -14,11 +14,11 @@ import java.io.Serializable;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
-import javax.batch.api.BatchProperty;
-import javax.batch.api.chunk.ItemReader;
+import jakarta.batch.api.BatchProperty;
+import jakarta.batch.api.chunk.ItemReader;
 import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import javax.jms.JMSException;
 import javax.jms.MapMessage;
 import javax.jms.Message;
@@ -30,7 +30,7 @@ import org.jberet.support._private.SupportLogger;
 import org.jberet.support._private.SupportMessages;
 
 /**
- * An implementation of {@code javax.batch.api.chunk.ItemReader} that reads data items from a JMS destination. It can
+ * An implementation of {@code jakarta.batch.api.chunk.ItemReader} that reads data items from a JMS destination. It can
  * reads the following JMS message types:
  * <p>
  * <ul>

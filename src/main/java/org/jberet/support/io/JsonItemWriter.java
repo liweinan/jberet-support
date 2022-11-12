@@ -14,11 +14,11 @@ import java.io.OutputStream;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
-import javax.batch.api.BatchProperty;
-import javax.batch.api.chunk.ItemWriter;
+import jakarta.batch.api.BatchProperty;
+import jakarta.batch.api.chunk.ItemWriter;
 import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
@@ -28,7 +28,7 @@ import org.jberet.support._private.SupportLogger;
 import org.jberet.support._private.SupportMessages;
 
 /**
- * An implementation of {@code javax.batch.api.chunk.ItemWriter} that writes a list of same-typed objects to Json resource.
+ * An implementation of {@code jakarta.batch.api.chunk.ItemWriter} that writes a list of same-typed objects to Json resource.
  * Each object is written as part of the root Json array.
  *
  * @see JsonItemReader

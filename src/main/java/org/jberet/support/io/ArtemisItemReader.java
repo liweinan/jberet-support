@@ -11,11 +11,11 @@
 package org.jberet.support.io;
 
 import java.io.Serializable;
-import javax.batch.api.BatchProperty;
-import javax.batch.api.chunk.ItemReader;
+import jakarta.batch.api.BatchProperty;
+import jakarta.batch.api.chunk.ItemReader;
 import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.apache.activemq.artemis.api.core.ActiveMQException;
 import org.apache.activemq.artemis.api.core.client.ClientConsumer;
@@ -23,7 +23,7 @@ import org.apache.activemq.artemis.api.core.client.ClientMessage;
 import org.jberet.support._private.SupportLogger;
 
 /**
- * An implementation of {@code javax.batch.api.chunk.ItemReader} that reads data items from a Artemis address.
+ * An implementation of {@code jakarta.batch.api.chunk.ItemReader} that reads data items from a Artemis address.
  * It handles the following types of Artemis messages:
  * <p>
  * <ul>

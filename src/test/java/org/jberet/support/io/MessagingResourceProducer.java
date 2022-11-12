@@ -11,7 +11,7 @@
 package org.jberet.support.io;
 
 import javax.enterprise.inject.Produces;
-import javax.inject.Named;
+import jakarta.inject.Named;
 import javax.jms.ConnectionFactory;
 import javax.jms.Destination;
 import javax.jms.Queue;

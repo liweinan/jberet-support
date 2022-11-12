@@ -28,7 +28,7 @@
         <modular.jdk.args/>
         <surefire.system.args>-Xms512m -Xmx2g ${modular.jdk.args}</surefire.system.args>
 
-        <version.org.jberet>${project.parent.version}</version.org.jberet>
+        <version.org.jberet>2.1.1.Final</version.org.jberet>
         <version.org.mongojack>2.8.2</version.org.mongojack>
         <version.org.apache.kafka>0.9.0.0</version.org.apache.kafka>
         <version.net.sf.jasperreports>6.17.0</version.net.sf.jasperreports>
@@ -36,7 +36,8 @@
 
         <version.org.beanio>2.1.0</version.org.beanio>
         <version.org.ow2.asm>5.0.4</version.org.ow2.asm>
-
+        <version.org.jboss.weld.weld>5.0.1.Final</version.org.jboss.weld.weld>
+        <version.org.jboss.weld.weld-se>5.0.1.Final</version.org.jboss.weld.weld-se>
     </properties>
 
     <dependencyManagement>
@@ -257,7 +258,55 @@
             <artifactId>cassandra-driver-core</artifactId>
         </dependency>
 
-        <!-- Test Dependencies -->
+        <!-- https://mvnrepository.com/artifact/jakarta.batch/jakarta.batch-api -->
+        <dependency>
+            <groupId>jakarta.batch</groupId>
+            <artifactId>jakarta.batch-api</artifactId>
+            <version>2.1.1</version>
+        </dependency>
+             <!-- Test Dependencies -->
+        <!-- https://mvnrepository.com/artifact/jakarta.transaction/jakarta.transaction-api -->
+        <dependency>
+            <groupId>jakarta.transaction</groupId>
+            <artifactId>jakarta.transaction-api</artifactId>
+            <version>2.0.1</version>
+            <scope>test</scope>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>jakarta.enterprise</groupId>-->
+<!--            <artifactId>jakarta.enterprise.cdi-api</artifactId>-->
+<!--            <version>3.0.0</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/jakarta.enterprise/jakarta.enterprise.cdi-api -->
+<!--        <dependency>-->
+<!--            <groupId>jakarta.enterprise</groupId>-->
+<!--            <artifactId>jakarta.enterprise.cdi-api</artifactId>-->
+<!--            <version>3.0.0</version>-->
+<!--        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/jakarta.enterprise/jakarta.enterprise.cdi-api -->
+        <dependency>
+            <groupId>jakarta.enterprise</groupId>
+            <artifactId>jakarta.enterprise.cdi-api</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/jakarta.platform/jakarta.jakartaee-api -->
+<!--        <dependency>-->
+<!--            <groupId>jakarta.platform</groupId>-->
+<!--            <artifactId>jakarta.jakartaee-api</artifactId>-->
+<!--            <version>8.0.0</version>-->
+<!--&lt;!&ndash;            <scope>provided</scope>&ndash;&gt;-->
+<!--        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api -->
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>2.1.1</version>
+        </dependency>
+
         <dependency>
             <groupId>org.jberet</groupId>
             <artifactId>jberet-core</artifactId>
@@ -273,11 +322,13 @@
         <dependency>
             <groupId>org.jboss.weld</groupId>
             <artifactId>weld-core-impl</artifactId>
+            <version>${version.org.jboss.weld.weld}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jboss.weld.se</groupId>
             <artifactId>weld-se-core</artifactId>
+            <version>${version.org.jboss.weld.weld-se}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -286,15 +337,15 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.jboss.spec.javax.annotation</groupId>
-            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.spec.javax.transaction</groupId>
-            <artifactId>jboss-transaction-api_1.2_spec</artifactId>
-            <scope>test</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.jboss.spec.jakarta.annotation</groupId>-->
+<!--            <artifactId>jboss-annotations-api_1.3_spec</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.jboss.spec.javax.transaction</groupId>-->
+<!--            <artifactId>jboss-transaction-api_1.2_spec</artifactId>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.jboss.marshalling</groupId>
             <artifactId>jboss-marshalling</artifactId>

@@ -15,9 +15,9 @@ import java.io.InputStream;
 import java.util.Map;
 import java.util.Properties;
 import java.util.WeakHashMap;
-import javax.batch.api.BatchProperty;
-import javax.batch.runtime.context.JobContext;
-import javax.inject.Inject;
+import jakarta.batch.api.BatchProperty;
+import jakarta.batch.runtime.context.JobContext;
+import jakarta.inject.Inject;
 import javax.naming.InitialContext;
 
 import org.beanio.StreamFactory;

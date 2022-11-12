@@ -12,7 +12,7 @@ package org.jberet.support.io;
 
 import java.util.HashMap;
 import java.util.Map;
-import javax.annotation.Generated;
+import jakarta.annotation.Generated;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;

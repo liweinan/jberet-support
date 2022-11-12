@@ -19,11 +19,11 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import javax.batch.api.BatchProperty;
-import javax.batch.api.chunk.ItemWriter;
+import jakarta.batch.api.BatchProperty;
+import jakarta.batch.api.chunk.ItemWriter;
 import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import com.datastax.driver.core.BatchStatement;
 import com.datastax.driver.core.BoundStatement;
@@ -38,7 +38,7 @@ import com.datastax.driver.core.UDTValue;
 import org.jberet.support._private.SupportLogger;
 
 /**
- * An implementation of {@code javax.batch.api.chunk.ItemWriter} that inserts data items into Cassandra cluster.
+ * An implementation of {@code jakarta.batch.api.chunk.ItemWriter} that inserts data items into Cassandra cluster.
  *
  * @see CassandraItemReader
  * @see CassandraReaderWriterBase

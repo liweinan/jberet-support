@@ -10,9 +10,9 @@
 
 package org.jberet.support.io;
 
-import javax.batch.api.Batchlet;
+import jakarta.batch.api.Batchlet;
 import javax.enterprise.context.Dependent;
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import com.datastax.driver.core.ResultSet;
 import com.datastax.driver.core.Row;

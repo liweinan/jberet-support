@@ -10,8 +10,8 @@
 
 package org.jberet.support.io;
 
-import javax.batch.api.BatchProperty;
-import javax.inject.Inject;
+import jakarta.batch.api.BatchProperty;
+import jakarta.inject.Inject;
 
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;

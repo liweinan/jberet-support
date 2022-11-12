@@ -12,7 +12,7 @@ package org.jberet.support.io;
 
 import org.junit.Test;
 
-import javax.batch.operations.BatchRuntimeException;
+import jakarta.batch.operations.BatchRuntimeException;
 
 import static org.junit.Assert.*;
 import static org.jberet.support.io.JdbcItemWriter.determineParameterNames;

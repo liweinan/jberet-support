@@ -16,11 +16,11 @@ import java.io.OutputStream;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
-import javax.batch.api.BatchProperty;
-import javax.batch.api.chunk.ItemWriter;
+import jakarta.batch.api.BatchProperty;
+import jakarta.batch.api.chunk.ItemWriter;
 import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -37,7 +37,7 @@ import org.jberet.support._private.SupportLogger;
 import org.jberet.support._private.SupportMessages;
 
 /**
- * An implementation of {@code javax.batch.api.chunk.ItemWriter} for Excel files. This implementation is currently based
+ * An implementation of {@code jakarta.batch.api.chunk.ItemWriter} for Excel files. This implementation is currently based
  * on Apache POI user model API, and in-memory content generation. For large data set that may cause memory issue,
  * consider using {@link ExcelStreamingItemWriter}.
  *

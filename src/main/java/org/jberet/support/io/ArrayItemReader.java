@@ -14,12 +14,12 @@ import java.io.ByteArrayInputStream;
 import java.io.Serializable;
 import java.lang.reflect.Array;
 import javax.enterprise.context.Dependent;
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.jberet.support._private.SupportLogger;
 
 /**
- * An implementation of {@code javax.batch.api.chunk.ItemReader} that reads from an array
+ * An implementation of {@code jakarta.batch.api.chunk.ItemReader} that reads from an array
  * of data. The input {@link #resource} may be specified as a url or path to external resource,
  * or an inlined content. In either case, the array resource content should be enclosed
  * inside {@code []}. For example,

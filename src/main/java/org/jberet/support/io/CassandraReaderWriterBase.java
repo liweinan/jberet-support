@@ -18,9 +18,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-import javax.batch.api.BatchProperty;
+import jakarta.batch.api.BatchProperty;
 import javax.enterprise.inject.Instance;
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import com.datastax.driver.core.AuthProvider;
 import com.datastax.driver.core.Cluster;

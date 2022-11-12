@@ -19,11 +19,11 @@ import java.util.Map;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
-import javax.batch.api.BatchProperty;
-import javax.batch.api.chunk.ItemReader;
+import jakarta.batch.api.BatchProperty;
+import jakarta.batch.api.chunk.ItemReader;
 import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.apache.poi.hssf.eventusermodel.FormatTrackingHSSFListener;
 import org.apache.poi.hssf.eventusermodel.HSSFEventFactory;
@@ -48,7 +48,7 @@ import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import org.jberet.support._private.SupportLogger;
 
 /**
- * An implementation of {@code javax.batch.api.chunk.ItemReader} for reading binary Excel files (.xls) based on
+ * An implementation of {@code jakarta.batch.api.chunk.ItemReader} for reading binary Excel files (.xls) based on
  * Apache POI event model API. Compared to {@link ExcelUserModelItemReader}, this reader implementation has smaller
  * memory footprint and is suitable for reading large binary excel files.
  *

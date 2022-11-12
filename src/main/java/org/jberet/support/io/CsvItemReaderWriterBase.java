@@ -11,8 +11,8 @@
 package org.jberet.support.io;
 
 import java.lang.reflect.Constructor;
-import javax.batch.api.BatchProperty;
-import javax.inject.Inject;
+import jakarta.batch.api.BatchProperty;
+import jakarta.inject.Inject;
 
 import org.jberet.support._private.SupportMessages;
 import org.supercsv.cellprocessor.ift.CellProcessor;

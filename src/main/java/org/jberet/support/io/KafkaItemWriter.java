@@ -12,11 +12,11 @@ package org.jberet.support.io;
 
 import java.io.Serializable;
 import java.util.List;
-import javax.batch.api.BatchProperty;
-import javax.batch.api.chunk.ItemWriter;
+import jakarta.batch.api.BatchProperty;
+import jakarta.batch.api.chunk.ItemWriter;
 import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;

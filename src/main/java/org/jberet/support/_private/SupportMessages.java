@@ -11,7 +11,7 @@
 package org.jberet.support._private;
 
 import java.util.Collection;
-import javax.batch.operations.BatchRuntimeException;
+import jakarta.batch.operations.BatchRuntimeException;
 
 import com.fasterxml.jackson.core.JsonLocation;
 import org.jboss.logging.Messages;

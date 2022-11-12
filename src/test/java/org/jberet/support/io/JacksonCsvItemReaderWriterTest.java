@@ -13,7 +13,7 @@ package org.jberet.support.io;
 import java.io.File;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-import javax.batch.runtime.BatchStatus;
+import jakarta.batch.runtime.BatchStatus;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import org.jberet.runtime.JobExecutionImpl;
